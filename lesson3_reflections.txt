@@ -8,24 +8,44 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Pulling changes automatically let us work in a controlled version of the
+    project, so that we are sure that unsolicited updates do not break our
+    local version. It also allows us to prepare the version for the remote push
+    so that it is reasonably stable, especially if there are more people
+    working on the same branch.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A clone is a copy of an entire repository (including their commit history)
+    from a location (local or remote) to another. 
+    Forking is a clone operation carried out by Github on their servers, cloning
+    a repository from a user account to the other.
+    Branch means creating a copy of another branch (series of commits) inside
+    the same local repository, in order to make changes on the original branch 
+    but without affecting it directly.
+    Branches are useful also for working on a project individually, while clones
+    and forks are more useful for collaboration efforts, or to make our own 
+    version of another project.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    At any time we can be aware of what have been our local changes (both staged
+    and committed to the local repo) compared to the last known remote state,
+    so that we can better prepare our local version for the remote push.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Everyone involved would have to exchange their local copies, and merge 
+    changes manually. It would complicate things significantly, although it 
+    wouldn't depend on external application/tools.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    I can work on experimental features or alternative implementations of 
+    the remote master parts of the code, without affecting it directly.
+    My changes can be then reviewed by the mantainers of the remote that
+    can evaluate if merging changes to master through pull requests.
