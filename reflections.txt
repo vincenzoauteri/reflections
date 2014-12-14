@@ -1,0 +1,55 @@
+ How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Doing a comparison by eye it's not efficient for short files, and simply
+    inviable for large ones. Doing a diff is a quick and error proof way of
+    comparing two files, higlight any changes between the two version that might
+    have introduced the bug.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Having access to the whole history of the projects allow us to roll back
+    changes which might have had undesirable effects, giving the programmer
+    the ability to save his project often without fear of compromising previous
+    work.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manual commits allow us to have control of what is saved, which can be still
+    not ready for storing (buggy, broken), and we might want to wait until is in
+    a more stable state and contains a change suited to a commit. 
+    On the other hand automatic saves ensure that the user does not have to 
+    remember to save, and is more suited to documents (not code)
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git and version control system are designed to manage software projects, 
+    which are generally made up by many different files related to each other, 
+    so the state of the whole project can be controlled. 
+    Other system focus on single documents when these are usually individual 
+    entities, so there is not really a point  on saving a single spreadsheet 
+    or word document.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Using "git log" we can see the history of each commit with its own id.
+    We can select the id of the commit that we want to analyze, the one of its
+    predecessors, and with the "git diff id1 id2"  we can see additions and 
+    deletions of the newer commit.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Having the possibility to revert to a previous working version and isolate 
+    possible bugs makes us more confident in doing frequent commits, since there
+    are only advantages and not penalties.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I have been using git and github for years, to save personal projects in 
+    different languages, and also configuration files (vim, vpn)
