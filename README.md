@@ -1,3 +1,3 @@
 reflections
 ===========
-Exercise for Udacity Source control with git class
+Exercise for How to use Git and Github class
